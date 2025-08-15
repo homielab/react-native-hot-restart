@@ -1,6 +1,6 @@
 {
   "name": "react-native-hot-restart",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A cross-platform React Native module to trigger such a hot restart programmatically",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
