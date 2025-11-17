@@ -1,6 +1,6 @@
+import { restart } from '@homielab/react-native-hot-restart';
 import { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
-import { restart } from 'react-native-hot-restart';
 
 export default function App() {
   const [time] = useState(() => new Date().toLocaleTimeString());

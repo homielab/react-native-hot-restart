@@ -1,5 +1,5 @@
-import HotRestart from './NativeHotRestart';
+import ReactNativeHotRestart from './NativeReactNativeHotRestart';
 
 export function restart(): void {
-  return HotRestart.restart();
+  return ReactNativeHotRestart.restart();
 }

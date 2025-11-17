@@ -1,4 +1,4 @@
-package com.hotrestart
+package com.homielab.reactnativehotrestart
 
 import android.content.Intent
 import android.util.Log
@@ -6,9 +6,9 @@ import android.util.Log
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.module.annotations.ReactModule
 
-@ReactModule(name = HotRestartModule.NAME)
-class HotRestartModule(reactContext: ReactApplicationContext) :
-  NativeHotRestartSpec(reactContext) {
+@ReactModule(name = ReactNativeHotRestartModule.NAME)
+class ReactNativeHotRestartModule(reactContext: ReactApplicationContext) :
+  NativeReactNativeHotRestartSpec(reactContext) {
 
   override fun getName(): String {
     return NAME
@@ -33,6 +33,6 @@ class HotRestartModule(reactContext: ReactApplicationContext) :
   }
 
   companion object {
-    const val NAME = "HotRestart"
+    const val NAME = "ReactNativeHotRestart"
   }
 }

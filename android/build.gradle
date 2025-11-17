@@ -1,6 +1,6 @@
 buildscript {
   ext.getExtOrDefault = {name ->
-    return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['HotRestart_' + name]
+    return rootProject.ext.has(name) ? rootProject.ext.get(name) : project.properties['ReactNativeHotRestart_' + name]
   }
 
   repositories {
@@ -22,11 +22,11 @@ apply plugin: "kotlin-android"
 apply plugin: "com.facebook.react"
 
 def getExtOrIntegerDefault(name) {
-  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["HotRestart_" + name]).toInteger()
+  return rootProject.ext.has(name) ? rootProject.ext.get(name) : (project.properties["ReactNativeHotRestart_" + name]).toInteger()
 }
 
 android {
-  namespace "com.hotrestart"
+  namespace "com.homielab.reactnativehotrestart"
 
   compileSdkVersion getExtOrIntegerDefault("compileSdkVersion")
 
